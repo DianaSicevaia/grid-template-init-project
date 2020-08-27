@@ -1,0 +1,10 @@
+.header {
+    min-height: 100vh;
+    background-color: $color-primary;
+    background-image: url(../img/img-header.png);
+    background-position: 50% 50%;
+    block-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}

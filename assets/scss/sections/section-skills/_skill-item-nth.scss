@@ -1,0 +1,5 @@
+@for $i from 1 through 9 {
+    .skill-item:nth-of-type(#{$i}) {
+        grid-area: a#{$i};
+    }
+}

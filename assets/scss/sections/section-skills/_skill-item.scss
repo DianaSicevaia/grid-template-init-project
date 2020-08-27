@@ -1,0 +1,56 @@
+
+.skill-item {
+    position: relative;
+    background-color: $color-primary;
+    min-height: calc(33.333vh - 13.333px);
+    overflow: hidden;
+
+  &__image {
+    @include abs-position;
+    
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: transform 0.5s;
+  }
+
+  &__overlay {
+    @include abs-position;
+
+    z-index: 1;
+    background-color: $color-primary;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+  }
+
+  &__title {
+    @include abs-position;
+    
+    z-index: 2;
+    margin: 0;
+  }
+
+  &__link {
+    display: flex;
+    padding: $gap;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    letter-spacing: 0.1em;
+    transition: color 0.5s;
+  }
+
+  &:hover {
+    .skill-item__overlay {
+    opacity: 0.95 !important;
+    }
+    
+    .skill-item__image {
+    transform: scale(1.1);
+    }
+    
+    .skill-item__link {
+    color: $color-accent;
+    }
+  }
+}
