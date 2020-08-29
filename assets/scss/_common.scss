@@ -26,11 +26,31 @@ h1 {
 }
 
 h2 {
+    font-family: $font-header;
+    color: $color-primary;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
 
+    @include lg-min {
+        font-size: 2.5rem;
+        margin-bottom: 56px;
+    }
+
+    @include lg-md {
+        font-size: 2rem;
+        margin-bottom: 42px;
+    }
+
+    @include md {
+        font-size: 1.5rem;
+        margin-bottom: 36px;
+        text-align: center;
+    }
 }
 
 p {
-
+    font-family: $font-main;
+    color: $color-gray
 }
 
 a {
