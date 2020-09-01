@@ -48,9 +48,18 @@ h2 {
     }
 }
 
+h3 {
+    font-family: $font-header;
+    color: $color-gray;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    font-size: 1.125rem;
+}
+
 p {
     font-family: $font-main;
-    color: $color-gray
+    color: $color-gray;
+    text-align: center;
 }
 
 a {
