@@ -1,0 +1,17 @@
+@for $i from 1 through 6 {
+    .post-item:nth-of-type(#{$i}) {
+        grid-area: p#{$i};
+    }
+}
+
+.posts {
+    
+    &__grid {
+        display: grid;
+        padding-bottom: 20px;
+        grid-gap: 20px;
+
+    grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
+    grid-template-columns: repeat(4, 1fr);
+    }
+}
