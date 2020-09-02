@@ -5,6 +5,21 @@
 }
 
 .posts {
+    @include lg-min {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    @include lg-md {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include md {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     &__container {
         @extend %container;
     }
@@ -34,6 +49,11 @@
             grid-template-columns: repeat(1fr);
         }
     }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .post-item {
@@ -50,6 +70,10 @@
         & p {
             color: $color-primary;
         }
+    }
+
+    & p {
+        text-align: center;
     }
 
     &__caption {
