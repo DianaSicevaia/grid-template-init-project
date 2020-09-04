@@ -1,4 +1,6 @@
 .about {
+    @extend %responsive;
+    
     background-color: $color-gray-light;
     letter-spacing: 0.055em;
 
@@ -8,27 +10,22 @@
 
   &__container {
     display: grid;
-    padding-top: 100px;
-    padding-bottom: 60px;
 
     @extend %container;
 
     @include lg-min {
         grid-template-columns: 1fr 271px;
-        row-gap: 100px;
-        column-gap: 100px;
+        grid-gap: 100px;
     }
 
     @include lg-md {
         grid-template-columns: 1fr 271px;
-        row-gap: 40px;
-        column-gap: 40px;
+        grid-gap: 40px;
     }
 
     @include md {
         grid-template-columns: 1fr 236px;
-        row-gap: 20px;
-        column-gap: 20px;
+        grid-gap: 20px;
     }
 
     @include sm {
@@ -47,25 +44,24 @@
   }
 
   &__content{
-      display: block;
-      & p:first-of-type {
-          position: relative;
-          margin-top: -5px;
-      }
+    & p:first-of-type {
+        position: relative;
+        margin-top: -5px;
+    }
 
-      & p:first-of-type::after {
-          right: -59px;
-          position: absolute;
-          margin-top: -42px;
-          content: "";
-          width: 1px;
-          height: 200px;
-          background-color: $color-gray-after;
+    & p:first-of-type::after {
+        right: -50px;
+        position: absolute;
+        margin-top: -42px;
+        content: "";
+        width: 2px;
+        height: 200px;
+        background-color: $color-gray-after;
 
-          @include lg-sm {
-              right: -10px;
-          }
-      }
+        @include lg-sm {
+            right: -10px;
+        }
+    }
 
   }
 

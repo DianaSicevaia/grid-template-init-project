@@ -4,3 +4,24 @@
     padding-left: $gap;
     padding-right: $gap;
 }
+
+%responsive {
+    @include lg-min {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    @include lg-md {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include md {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    &__container {
+        @extend %container;
+    }
+}

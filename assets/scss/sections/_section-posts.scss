@@ -5,23 +5,14 @@
 }
 
 .posts {
-    @include lg-min {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-    
-    @include lg-md {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
-    @include md {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+    @extend %responsive;
 
     &__container {
         @extend %container;
+
+        & h2 {
+            margin-top: 0;
+        }
     }
 
     &__grid {
@@ -46,7 +37,7 @@
 
         @include sm{
             grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
-            grid-template-columns: repeat(1fr);
+            grid-template-columns: 1fr;
         }
     }
 
@@ -83,6 +74,14 @@
 
         & h {
             transition: color 0.5s;
+        }
+
+        & h3 {
+            font-family: $font-header;
+            color: $color-gray;
+            letter-spacing: 0.05rem;
+            text-align: center;
+            font-size: 1.125rem;
         }
 
         & p {

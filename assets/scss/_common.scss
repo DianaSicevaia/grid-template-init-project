@@ -41,19 +41,12 @@ h2 {
         margin-bottom: 42px;
     }
 
-    @include md {
+    @include sm {
         font-size: 1.5rem;
         margin-bottom: 36px;
         text-align: center;
     }
-}
 
-h3 {
-    font-family: $font-header;
-    color: $color-gray;
-    letter-spacing: 0.05rem;
-    text-align: center;
-    font-size: 1.125rem;
 }
 
 p {
@@ -64,6 +57,10 @@ p {
 a {
     text-decoration: none;
     color: $color-light;
+}
+
+input {
+    outline: none;
 }
 
 .btn,
