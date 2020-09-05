@@ -793,6 +793,7 @@ input {
   left: 0;
   z-index: 2;
   margin: 0;
+  letter-spacing: 0.1em;
 }
 
 .skill-item__link {
@@ -808,7 +809,6 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1.25rem;
-  letter-spacing: 0.1em;
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
   transition: color 0.5s;
@@ -920,9 +920,9 @@ input {
   background-color: rgba(255, 255, 255, 0.05);
   border-color: rgba(255, 255, 255, 0);
   border-bottom-color: rgba(255, 255, 255, 0.25);
-  -webkit-transition: backgrpund-color 0.5s, border-color 0.5s;
-  -o-transition: backgrpund-color 0.5s, border-color 0.5s;
-  transition: backgrpund-color 0.5s, border-color 0.5s;
+  -webkit-transition: background-color 0.5s, border-color 0.5s;
+  -o-transition: background-color 0.5s, border-color 0.5s;
+  transition: background-color 0.5s, border-color 0.5s;
 }
 
 .form .btn-accent:hover, .form .btn-accent:focus {
@@ -952,6 +952,50 @@ input {
   background-color: rgba(255, 255, 255, 0.15);
   border-color: rgba(255, 255, 255, 0.15);
   border-bottom-color: #ffffff;
+}
+
+.form-item__input:hover::-webkit-input-placeholder, .form-item__input:focus::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form-item__input:hover::-moz-placeholder, .form-item__input:focus::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form-item__input:hover:-ms-input-placeholder, .form-item__input:focus:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form-item__input:hover::-ms-input-placeholder, .form-item__input:focus::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form-item__input:hover::placeholder, .form-item__input:focus::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form-item__input::-webkit-input-placeholder {
+  color: #637588;
+}
+
+.form-item__input::-moz-placeholder {
+  color: #637588;
+}
+
+.form-item__input:-ms-input-placeholder {
+  color: #637588;
+}
+
+.form-item__input::-ms-input-placeholder {
+  color: #637588;
+}
+
+.form-item__input::placeholder {
+  color: #637588;
+}
+
+.form-item__input:first-of-type:active {
+  background-color: #ffffff;
 }
 
 .post-item:nth-of-type(1) {
@@ -1169,6 +1213,9 @@ input {
         -ms-flex-pack: end;
             justify-content: end;
   }
+  .skill-item__title {
+    font-size: 1.25rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1282,6 +1329,9 @@ input {
   }
   .header-content__title {
     margin: 0 0 33px 0;
+  }
+  .skill-item__title {
+    font-size: 1.125rem;
   }
   .about__container {
     grid-template-columns: 1fr 236px;

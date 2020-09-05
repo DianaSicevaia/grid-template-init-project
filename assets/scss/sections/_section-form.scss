@@ -27,7 +27,7 @@
         background-color: rgba($color-light, 0.05);
         border-color: rgba($color-light, 0);
         border-bottom-color: rgba($color-light, 0.25);
-        transition: backgrpund-color 0.5s, border-color 0.5s;
+        transition: background-color 0.5s, border-color 0.5s;
 
         @include sm-min {
             min-width: 250px;
@@ -68,6 +68,17 @@
         background-color: rgba($color-light, 0.15);
         border-color: rgba($color-light, 0.15);
         border-bottom-color: $color-light;
+
+        &::placeholder {
+            color: rgba($color-light, 0.3);
+        }
+    }
+
+    &::placeholder {
+        color: $color-gray;
+    }
+    &:first-of-type:active {
+        background-color: $color-light;
     }
   }
 }
