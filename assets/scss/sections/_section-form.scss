@@ -77,8 +77,5 @@
     &::placeholder {
         color: $color-gray;
     }
-    &:first-of-type:active {
-        background-color: $color-light;
-    }
   }
 }
